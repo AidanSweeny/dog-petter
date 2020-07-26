@@ -5,7 +5,7 @@
 <ul>
   {{#each dogs}}
   {{#unless petted}}
-  <li>
+  <li class = "dogs_not_petted">
   		<p><span class="label">ID:</span> {{this.id}}</p>
         <p><span class="label">Name:</span> {{this.dog_name}}</p>
 
@@ -20,7 +20,7 @@
 <ul>
   {{#each dogs}}
   {{#if petted}}
-  <li>
+  <li class = "dogs_petted">
   		<p><span class="label">ID:</span> {{this.id}}</p>
         <p><span class="label">Name:</span> {{this.dog_name}}</p>
 

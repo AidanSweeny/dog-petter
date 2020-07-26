@@ -1,19 +1,20 @@
-li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
+
   .label {
     font-weight: bold;
   }
   
-  .create-update-form {
+  .dogs_not_petted {
     padding: 5px;
     margin: 5px;
-    background: aqua;
+    background: red;
   }
-  
+
+  .dogs_petted {
+    padding: 5px;
+    margin: 5px;
+    background: teal;
+  }
+
   .form-group {
     margin-bottom: 5px;
   }
