@@ -1,9 +1,9 @@
 var connection = require("./connection.js");
 
 var orm = {
-  insertOne: function(dog_name, petted, cb) {
-    var queryString = "INSERT INTO dogs(dog_name, petted) VALUES (?, ?)";
-    connection.query(queryString, [dog_name, petted], function(err, result) {
+  insertOne: function(dog_name, cb) {
+    var queryString = "INSERT INTO dogs(dog_name, petted) VALUES (?, false)";
+    connection.query(queryString, [dog_name], function(err, result) {
       if (err) throw err;
       cb(result);
     });
@@ -15,9 +15,16 @@ var orm = {
       cb(result);
     });
   },
-  updateOne: function(petted, dog_name){
-    var queryString = "UPDATE dogs SET petted = ? WHERE ?";
-    connection.query(queryString, [petted, dog_name], function(err, result) {
+  updateOne: function(id, cb){
+    var queryString = "UPDATE dogs SET petted = true WHERE id = ?";
+    connection.query(queryString, [id], function(err, result) {
+      if (err) throw err;
+      cb(result);
+    });
+  },
+  deleteOne: function(id, cb){
+    var queryString = "DELETE FROM dogs WHERE id = ?";
+    connection.query(queryString, [id], function(err, result) {
       if (err) throw err;
       cb(result);
     });
