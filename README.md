@@ -1,7 +1,7 @@
 # burger
 For this project I created an application that is able to add entries to a table, and then retrieve them. This application was made using SQL, express, heroku for the deployment, and handlebar. Using these tools I was able to retrieve information from the SQL table, and add, update and delete it. The handlebars programs were used to deploy the information to the html files. Using the `{{#each}}` tag to loop through the data object that is returned by the express router. I then used the `{{#unless}}` and the `{{#if}}` tags to check if the dog was petted or not yet. Using the orm constructor I was able to create an orm object with methods in it that would gather information from the SQL table. This orm was then used in another javascript file, and then finally utilized by the controller on the actual api calls. The client side javascript was created in the handlebars html files. Below is a gif of the working application: 
 
-![](tracker.gif)
+![](petter.gif)
 
 This gif shows the functionality of the  application in that it can make departments, roles, and employees. It also shows the functionality of updating the table.
 
