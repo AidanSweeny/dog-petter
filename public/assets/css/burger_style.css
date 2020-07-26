@@ -1,21 +1,37 @@
-
   .label {
     font-weight: bold;
+  }
+
+  h1, h2{
+      background-color: grey;
+      margin: 10px;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align:center;
   }
   
   .dogs_not_petted {
     padding: 5px;
     margin: 5px;
     background: red;
+    width: 50%;
+    list-style: none;
   }
 
   .dogs_petted {
     padding: 5px;
     margin: 5px;
     background: teal;
+    width: 50%;
+    list-style: none;
   }
 
   .form-group {
     margin-bottom: 5px;
   }
   
+  form {
+      text-align: center;
+
+  }
